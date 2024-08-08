@@ -1,8 +1,7 @@
-import Image from "next/image";
-import React from "react";
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
-import { Icons } from "../customs/Icons";
+import { services, stats } from "@/constants";
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import Image from "next/image";
 
 export default function HeroSection() {
 	return (
@@ -84,37 +83,3 @@ export default function HeroSection() {
 		</section>
 	);
 }
-
-const stats = [
-	{
-		count: "200",
-		title: "Happy Customers",
-	},
-	{
-		count: "10k",
-		title: "Properties For Clients",
-	},
-	{
-		count: "16",
-		title: "Years of Experience",
-	},
-];
-
-const services = [
-	{
-		title: "Find Your Dream Home",
-		icon: Icons.home,
-	},
-	{
-		title: "Unlock Property Value",
-		icon: Icons.camera,
-	},
-	{
-		title: "Effortless Property Management",
-		icon: Icons.property,
-	},
-	{
-		title: "Smart Investments, Informed Decisions",
-		icon: Icons.investment,
-	},
-];
