@@ -11,6 +11,9 @@ export default function FrequentlyAskedQuestionsSlider() {
 			0: {
 				items: 1,
 			},
+			700: {
+				items: 2,
+			},
 			1400: {
 				items: 3,
 			},
