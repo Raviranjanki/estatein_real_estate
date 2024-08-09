@@ -1,3 +1,5 @@
+import Navbar from "@/components/customs/Navbar";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Urbanist as FontSans } from "next/font/google";
@@ -21,7 +23,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>{children}</body>
+			<body className={cn("min-h-screen bg-grey-700 font-sans antialiased", fontSans.variable)}>
+				<Navbar />
+				<ThemeProvider attribute="class" defaultTheme="dark">
+					{children}
+				</ThemeProvider>
+			</body>
 		</html>
 	);
 }
